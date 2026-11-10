@@ -1,0 +1,1 @@
+Exploratory natural baseline; suite, repeats and temperature recorded in config.json; no forced omissions. Uniform seeded C0-C3 assignment only for finished U0=0 baselines. Controller audits occur after follow-up and are never shown to the model. This batch changes task complexity, tools, temperature and budgets together; it cannot isolate their effects.

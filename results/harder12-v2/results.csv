@@ -1,0 +1,13 @@
+run,task,repeat,seed,model,u0,baseline_valid,baseline_passed,baseline_status,arm,u1,followup_valid,followup_passed,followup_status,baseline_audit_valid,baseline_audit_passed,final_audit_valid,final_audit_passed
+0,invoice,0,6080,qwen2.5-coder:7b,1,1,0,budget_exhausted,,0,0,0,not_assigned,1,0,1,0
+1,events,0,6081,qwen2.5-coder:7b,1,1,0,budget_exhausted,,0,0,0,not_assigned,1,0,1,0
+2,pagination,0,6082,qwen2.5-coder:7b,1,1,0,budget_exhausted,,0,0,0,not_assigned,1,0,1,0
+3,invoice,1,6083,qwen2.5-coder:7b,1,1,0,budget_exhausted,,0,0,0,not_assigned,1,0,1,0
+4,events,1,6084,qwen2.5-coder:7b,1,1,0,budget_exhausted,,0,0,0,not_assigned,1,0,1,0
+5,pagination,1,6085,qwen2.5-coder:7b,1,1,0,budget_exhausted,,0,0,0,not_assigned,1,0,1,0
+6,invoice,2,6086,qwen2.5-coder:7b,1,1,0,budget_exhausted,,0,0,0,not_assigned,1,0,1,0
+7,events,2,6087,qwen2.5-coder:7b,1,1,0,budget_exhausted,,0,0,0,not_assigned,1,0,1,0
+8,pagination,2,6088,qwen2.5-coder:7b,1,1,0,budget_exhausted,,0,0,0,not_assigned,1,0,1,0
+9,invoice,3,6089,qwen2.5-coder:7b,1,1,0,budget_exhausted,,0,0,0,not_assigned,1,0,1,0
+10,events,3,6090,qwen2.5-coder:7b,1,1,0,budget_exhausted,,0,0,0,not_assigned,1,0,1,0
+11,pagination,3,6091,qwen2.5-coder:7b,1,1,0,budget_exhausted,,0,0,0,not_assigned,1,0,1,0

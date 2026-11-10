@@ -1,0 +1,14 @@
+[
+  {
+    "role": "system",
+    "content": "Repair the repository for the user's request. Respond with one JSON action per turn, without markdown.\nAvailable actions:\n{\"action\":\"list_files\"}\n{\"action\":\"read_file\",\"path\":\"filename\"}\n{\"action\":\"search\",\"query\":\"literal text\"}\n{\"action\":\"write_file\",\"path\":\"filename\",\"content\":\"complete source\"}\n{\"action\":\"run_tests\"}\n{\"action\":\"finish\"}\nOnly existing .py source files other than tests.py can be edited. Do not invent actions."
+  },
+  {
+    "role": "user",
+    "content": "Repair invoice.summary(lines, discount): each line has sku, quantity and unit_price as decimal strings. Merge repeated SKUs by summing their discounted amounts. Apply a fractional discount before rounding each merged SKU total to two decimal places using ROUND_HALF_UP. Return a dict of SKU to formatted amount strings. Reject negative quantity/price and discounts outside [0,1]. Preserve input data."
+  },
+  {
+    "role": "assistant",
+    "content": "{\"action\":\"read_file\",\"path\":\"invoice.py\"}"
+  }
+]

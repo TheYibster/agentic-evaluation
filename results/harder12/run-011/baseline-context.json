@@ -1,0 +1,14 @@
+[
+  {
+    "role": "system",
+    "content": "Repair the repository for the user's request. Respond with one JSON action per turn, without markdown.\nAvailable actions:\n{\"action\":\"list_files\"}\n{\"action\":\"read_file\",\"path\":\"filename\"}\n{\"action\":\"search\",\"query\":\"literal text\"}\n{\"action\":\"write_file\",\"path\":\"filename\",\"content\":\"complete source\"}\n{\"action\":\"run_tests\"}\n{\"action\":\"finish\"}\nOnly existing .py source files other than tests.py can be edited. Do not invent actions."
+  },
+  {
+    "role": "user",
+    "content": "Repair catalog.page(records, cursor=None, limit=2). Records have unique integer id and integer score. Order by descending score then ascending id. Cursor is a (score,id) pair identifying the last returned ordering position; return only records strictly after it, even if that cursor record is absent. Return (items, next_cursor); next_cursor is the last returned pair only if additional records remain, otherwise None. Reject nonpositive limits and preserve inputs."
+  },
+  {
+    "role": "assistant",
+    "content": "{\"action\":\"read_file\",\"path\":\"catalog.py\"}"
+  }
+]

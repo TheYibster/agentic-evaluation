@@ -1,0 +1,59 @@
+{
+  "synthetic": true,
+  "task": "sum",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a coding agent. Fix the requested function in solution.py. Respond with exactly one JSON object per turn. Actions always available:\n{\"action\":\"read_file\",\"path\":\"solution.py\"} (tests.py is also readable)\n{\"action\":\"write_file\",\"path\":\"solution.py\",\"content\":\"complete source\"}\n{\"action\":\"run_tests\"}\n{\"action\":\"finish\"}\nOnly solution.py may be edited. Do not include markdown or commentary outside JSON."
+    },
+    {
+      "role": "user",
+      "content": "Fix total(values), including empty lists."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"action\": \"read_file\", \"path\": \"solution.py\"}"
+    },
+    {
+      "role": "user",
+      "content": "Action result: {\"content\": \"def total(values): return sum(values) + 1\\n\"}"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"action\": \"write_file\", \"path\": \"solution.py\", \"content\": \"def total(values): return sum(values)\\n\"}"
+    },
+    {
+      "role": "user",
+      "content": "Action result: {\"written\": true}"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"action\": \"finish\"}"
+    }
+  ],
+  "source": "def total(values): return sum(values)\n",
+  "tests": "assert total([]) == 0\nassert total([2,-1,4]) == 5",
+  "u0": 0,
+  "baseline_status": "finished",
+  "scripted_actions": [
+    [
+      {
+        "action": "read_file",
+        "path": "solution.py"
+      },
+      {
+        "content": "def total(values): return sum(values) + 1\n"
+      }
+    ],
+    [
+      {
+        "action": "write_file",
+        "path": "solution.py",
+        "content": "def total(values): return sum(values)\n"
+      },
+      {
+        "written": true
+      }
+    ]
+  ]
+}

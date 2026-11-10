@@ -1,0 +1,14 @@
+[
+  {
+    "role": "system",
+    "content": "Repair the repository for the user's request. Respond with one JSON action per turn, without markdown.\nAvailable actions:\n{\"action\":\"list_files\"}\n{\"action\":\"read_file\",\"path\":\"filename\"}\n{\"action\":\"search\",\"query\":\"literal text\"}\n{\"action\":\"write_file\",\"path\":\"filename\",\"content\":\"complete source\"}\n{\"action\":\"run_tests\"}\n{\"action\":\"finish\"}\nOnly existing .py source files other than tests.py can be edited. Do not invent actions."
+  },
+  {
+    "role": "user",
+    "content": "Repair events.latest(events): each event has id, timestamp (ISO 8601 with timezone, including Z) and payload. Return the latest event per id ordered by id. Compare absolute instants across offsets; on equal instants keep the last input event. Reject timestamps without timezone. Do not mutate input."
+  },
+  {
+    "role": "assistant",
+    "content": "{\"action\":\"read_file\",\"path\":\"events.py\"}"
+  }
+]

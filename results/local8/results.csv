@@ -1,0 +1,9 @@
+run,task,repeat,seed,model,u0,baseline_valid,baseline_passed,baseline_status,arm,u1,followup_valid,followup_passed,followup_status
+0,sum,0,5080,qwen2.5-coder:7b,1,1,1,finished,,0,0,0,not_assigned
+1,sum,1,5081,qwen2.5-coder:7b,1,1,1,finished,,0,0,0,not_assigned
+2,palindrome,0,5082,qwen2.5-coder:7b,1,1,1,finished,,0,0,0,not_assigned
+3,palindrome,1,5083,qwen2.5-coder:7b,1,1,1,finished,,0,0,0,not_assigned
+4,clamp,0,5084,qwen2.5-coder:7b,1,1,1,finished,,0,0,0,not_assigned
+5,clamp,1,5085,qwen2.5-coder:7b,1,1,1,finished,,0,0,0,not_assigned
+6,unique,0,5086,qwen2.5-coder:7b,1,1,1,finished,,0,0,0,not_assigned
+7,unique,1,5087,qwen2.5-coder:7b,1,1,1,finished,,0,0,0,not_assigned

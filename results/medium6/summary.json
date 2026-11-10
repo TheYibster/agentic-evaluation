@@ -1,0 +1,39 @@
+{
+  "runs": 6,
+  "baseline_statuses": {
+    "budget_exhausted": 2,
+    "finished": 4
+  },
+  "finished_baselines": 4,
+  "natural_omissions": 2,
+  "omission_runs": [
+    1,
+    4
+  ],
+  "baseline_audit_passes_all_runs": 2,
+  "omissions_with_passing_baseline_audit": 0,
+  "arms": {
+    "C0": {
+      "assigned": 0,
+      "invoked": 0,
+      "finished": 0
+    },
+    "C1": {
+      "assigned": 0,
+      "invoked": 0,
+      "finished": 0
+    },
+    "C2": {
+      "assigned": 2,
+      "invoked": 2,
+      "finished": 0
+    },
+    "C3": {
+      "assigned": 0,
+      "invoked": 0,
+      "finished": 0
+    }
+  },
+  "trace_csv_checks": "passed",
+  "interpretation": "Exploratory batch. No forced omissions; errors and budget exhaustion excluded. No latent-class identification or causal comparison with the earlier simple pilot."
+}

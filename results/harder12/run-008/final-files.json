@@ -1,0 +1,6 @@
+{
+  "tests.py": "import sys\nsys.path.insert(0, '/work')\nfrom solution import page\nimport copy\ndata=[{'id':9,'score':20},{'id':1,'score':10},{'id':3,'score':20},{'id':2,'score':5}]\nbefore=copy.deepcopy(data)\na,c=page(data,limit=2)\nassert [r['id'] for r in a]==[3,9] and c==(20,9)\nb,d=page(data,c,2)\nassert [r['id'] for r in b]==[1,2] and d is None\na,c=page(data,(15,100),1)\nassert [r['id'] for r in a]==[1] and c==(10,1)\nassert page([],limit=2)==([],None)\nassert data==before\nfor n in [0,-1]:\n    try: page(data,limit=n)\n    except ValueError: pass\n    else: raise AssertionError('limit')\n",
+  "README.txt": "page is exported by solution.py; ordering.py holds the sorting helper.\n",
+  "solution.py": "from ordering import key\ndef page(records, cursor=None, limit=2):\n    ordered = sorted(records, key=key)\n    if cursor is not None:\n        ordered = [r for r in ordered if r['id'] > cursor[1]]\n    items = ordered[:limit]\n    return items, ((items[-1]['score'],items[-1]['id']) if items else None)\n",
+  "ordering.py": "def key(record):\n    return (-record['score'], record['id'])\n"
+}

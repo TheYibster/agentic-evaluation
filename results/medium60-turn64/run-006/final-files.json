@@ -1,0 +1,6 @@
+{
+  "tests.py": "import sys\nsys.path.insert(0, '/work')\nfrom solution import reserve\ns={'a':5,'b':2}\nassert reserve(s,[('a',2),('a',1)])=={'a':2,'b':2}\nassert s=={'a':5,'b':2}\nfor req in [[('a',3),('a',3)],[('x',1)],[('a',0)],[('a',-1)]]:\n    try: reserve(s,req)\n    except ValueError: pass\n    else: raise AssertionError('expected rejection')\nassert s=={'a':5,'b':2}\nassert reserve(s,[])==s\n",
+  "README.txt": "solution.py exports reserve; checks.py provides shared availability checks.\n",
+  "solution.py": "from checks import available\nfrom itertools import groupby\ndef reserve(stock, requests):\n    requests = [(sku, quantity) for sku, quantity in requests if quantity > 0]\n    requests = [(sku, sum(q for _, q in g)) for sku, g in groupby(sorted(requests), key=lambda x: x[0])]\n    for sku, quantity in requests:\n        if not available(stock, sku, quantity): raise ValueError('unavailable')\n        stock[sku] -= quantity\n    return stock\n",
+  "checks.py": "def available(stock, sku, quantity):\n    return sku in stock and stock[sku] >= quantity\n"
+}

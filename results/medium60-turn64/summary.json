@@ -1,0 +1,89 @@
+{
+  "runs": 60,
+  "baseline_statuses": {
+    "budget_exhausted": 23,
+    "finished": 37
+  },
+  "baseline_test_invocations_all_runs": 40,
+  "finished_baselines": 37,
+  "natural_omissions": 20,
+  "omission_runs": [
+    3,
+    5,
+    7,
+    9,
+    13,
+    15,
+    17,
+    18,
+    19,
+    22,
+    26,
+    28,
+    31,
+    37,
+    38,
+    40,
+    45,
+    49,
+    52,
+    58
+  ],
+  "baseline_audit_passes_all_runs": 17,
+  "omissions_with_passing_baseline_audit": 2,
+  "arms": {
+    "C0": {
+      "assigned": 5,
+      "invoked": 2,
+      "finished": 4,
+      "statuses": {
+        "finished": 4,
+        "budget_exhausted": 1
+      },
+      "valid_test_execution": 2,
+      "ever_passed_agent_tests": 0,
+      "incorrect_to_correct": 0,
+      "final_audit_passes": 0
+    },
+    "C1": {
+      "assigned": 2,
+      "invoked": 2,
+      "finished": 0,
+      "statuses": {
+        "budget_exhausted": 2
+      },
+      "valid_test_execution": 2,
+      "ever_passed_agent_tests": 0,
+      "incorrect_to_correct": 0,
+      "final_audit_passes": 0
+    },
+    "C2": {
+      "assigned": 4,
+      "invoked": 4,
+      "finished": 1,
+      "statuses": {
+        "budget_exhausted": 3,
+        "finished": 1
+      },
+      "valid_test_execution": 4,
+      "ever_passed_agent_tests": 1,
+      "incorrect_to_correct": 0,
+      "final_audit_passes": 1
+    },
+    "C3": {
+      "assigned": 9,
+      "invoked": 9,
+      "finished": 1,
+      "statuses": {
+        "budget_exhausted": 8,
+        "finished": 1
+      },
+      "valid_test_execution": 9,
+      "ever_passed_agent_tests": 1,
+      "incorrect_to_correct": 0,
+      "final_audit_passes": 1
+    }
+  },
+  "trace_csv_checks": "passed",
+  "interpretation": "Exploratory batch. No forced omissions; errors and budget exhaustion excluded. No latent-class identification or causal comparison with the earlier simple pilot."
+}

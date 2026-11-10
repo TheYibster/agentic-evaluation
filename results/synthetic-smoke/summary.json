@@ -1,0 +1,32 @@
+{
+  "synthetic": true,
+  "plumbing_passed": true,
+  "all_arms_covered": true,
+  "checks": [
+    {
+      "arm": "C2",
+      "context_preserved": true,
+      "csv_matches_trace": true,
+      "followup_status": "finished"
+    },
+    {
+      "arm": "C3",
+      "context_preserved": true,
+      "csv_matches_trace": true,
+      "followup_status": "finished"
+    },
+    {
+      "arm": "C1",
+      "context_preserved": true,
+      "csv_matches_trace": true,
+      "followup_status": "finished"
+    },
+    {
+      "arm": "C0",
+      "context_preserved": true,
+      "csv_matches_trace": true,
+      "followup_status": "finished"
+    }
+  ],
+  "limitation": "Scripted baseline; no natural omission or treatment-effect evidence."
+}

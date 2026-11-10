@@ -1,0 +1,6 @@
+{
+  "tests.py": "import sys\nsys.path.insert(0, '/work')\nfrom solution import latest\nimport copy\na={'id':'b','timestamp':'2025-01-01T10:00:00+02:00','payload':1}\nb={'id':'b','timestamp':'2025-01-01T08:30:00Z','payload':2}\nc={'id':'a','timestamp':'2025-01-01T08:30:00+00:00','payload':3}\nd={'id':'b','timestamp':'2025-01-01T03:30:00-05:00','payload':4}\ndata=[a,b,c,d]\nbefore=copy.deepcopy(data)\nassert latest(data)==[c,d]\nassert data==before\nassert latest([])==[]\ntry: latest([{'id':'a','timestamp':'2025-01-01T00:00:00','payload':0}])\nexcept ValueError: pass\nelse: raise AssertionError('timezone required')\n",
+  "README.txt": "latest is exported by solution.py. timestamps.py parses timestamps. IDs are strings.\n",
+  "solution.py": "from timestamps import parse\ndef latest(events):\n    selected = {}\n    for event in events:\n        key = event['id']\n        if key not in selected or event['timestamp'] > selected[key]['timestamp']:\n            selected[key] = event\n    return list(selected.values())\n",
+  "timestamps.py": "from datetime import datetime\ndef parse(value):\n    return datetime.fromisoformat(value.replace('Z', '+00:00'))\n"
+}

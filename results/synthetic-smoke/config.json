@@ -1,0 +1,13 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "seed": 5080,
+  "repeats": 2,
+  "max_turns": 8,
+  "timeout_seconds": 180,
+  "docker_image": "python:3.11-slim",
+  "options": {
+    "temperature": 0,
+    "num_ctx": 8192,
+    "num_predict": 1024
+  }
+}

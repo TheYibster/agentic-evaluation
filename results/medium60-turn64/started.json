@@ -1,0 +1,7 @@
+{
+  "started_utc": "2026-11-09T23:47:08.039660+00:00",
+  "planned_baselines": 60,
+  "baseline_turn_limit": 64,
+  "followup_turn_limit": 64,
+  "stop_rule": "Complete the fixed sample; do not stop based on omission or response outcomes."
+}
