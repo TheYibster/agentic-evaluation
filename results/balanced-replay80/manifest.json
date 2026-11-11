@@ -1,0 +1,650 @@
+{
+  "kind": "balanced_replay",
+  "source": "results/medium60-turn64",
+  "started_utc": "2026-11-11T03:43:36.172041+00:00",
+  "planned_cases": 80,
+  "max_turns": 64,
+  "stop_rule": "Complete all planned cases, without stopping or changing settings based on outcomes.",
+  "cases": [
+    {
+      "run": 3,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "7372e4664ab644cd262bb0b6916ed7f50927a43c02deaf48ea420250c23516b1",
+      "arm": "C2",
+      "seed": 10003
+    },
+    {
+      "run": 3,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "7372e4664ab644cd262bb0b6916ed7f50927a43c02deaf48ea420250c23516b1",
+      "arm": "C3",
+      "seed": 10003
+    },
+    {
+      "run": 3,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "7372e4664ab644cd262bb0b6916ed7f50927a43c02deaf48ea420250c23516b1",
+      "arm": "C1",
+      "seed": 10003
+    },
+    {
+      "run": 3,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "7372e4664ab644cd262bb0b6916ed7f50927a43c02deaf48ea420250c23516b1",
+      "arm": "C0",
+      "seed": 10003
+    },
+    {
+      "run": 5,
+      "task": "intervals",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "1c797cb49fe41e91bd3dbddc7c48f022e292762d123381494f2c8f26dd9dc9ca",
+      "arm": "C2",
+      "seed": 10005
+    },
+    {
+      "run": 5,
+      "task": "intervals",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "1c797cb49fe41e91bd3dbddc7c48f022e292762d123381494f2c8f26dd9dc9ca",
+      "arm": "C3",
+      "seed": 10005
+    },
+    {
+      "run": 5,
+      "task": "intervals",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "1c797cb49fe41e91bd3dbddc7c48f022e292762d123381494f2c8f26dd9dc9ca",
+      "arm": "C1",
+      "seed": 10005
+    },
+    {
+      "run": 5,
+      "task": "intervals",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "1c797cb49fe41e91bd3dbddc7c48f022e292762d123381494f2c8f26dd9dc9ca",
+      "arm": "C0",
+      "seed": 10005
+    },
+    {
+      "run": 7,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "91979e7c4c49e253bd76178132374ae5c40ad2d37339a3cfc2d63753dc88108a",
+      "arm": "C0",
+      "seed": 10007
+    },
+    {
+      "run": 7,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "91979e7c4c49e253bd76178132374ae5c40ad2d37339a3cfc2d63753dc88108a",
+      "arm": "C3",
+      "seed": 10007
+    },
+    {
+      "run": 7,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "91979e7c4c49e253bd76178132374ae5c40ad2d37339a3cfc2d63753dc88108a",
+      "arm": "C2",
+      "seed": 10007
+    },
+    {
+      "run": 7,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "91979e7c4c49e253bd76178132374ae5c40ad2d37339a3cfc2d63753dc88108a",
+      "arm": "C1",
+      "seed": 10007
+    },
+    {
+      "run": 9,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "26fa577492fd164b0591bf9d2148beef00d1fafcab85f9ab88f81a3e03326722",
+      "arm": "C3",
+      "seed": 10009
+    },
+    {
+      "run": 9,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "26fa577492fd164b0591bf9d2148beef00d1fafcab85f9ab88f81a3e03326722",
+      "arm": "C1",
+      "seed": 10009
+    },
+    {
+      "run": 9,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "26fa577492fd164b0591bf9d2148beef00d1fafcab85f9ab88f81a3e03326722",
+      "arm": "C2",
+      "seed": 10009
+    },
+    {
+      "run": 9,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "26fa577492fd164b0591bf9d2148beef00d1fafcab85f9ab88f81a3e03326722",
+      "arm": "C0",
+      "seed": 10009
+    },
+    {
+      "run": 13,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "23b56d066424778682ad828234d260013d4eca8f43cfbeea57dd4bb7be93a868",
+      "arm": "C3",
+      "seed": 10013
+    },
+    {
+      "run": 13,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "23b56d066424778682ad828234d260013d4eca8f43cfbeea57dd4bb7be93a868",
+      "arm": "C1",
+      "seed": 10013
+    },
+    {
+      "run": 13,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "23b56d066424778682ad828234d260013d4eca8f43cfbeea57dd4bb7be93a868",
+      "arm": "C2",
+      "seed": 10013
+    },
+    {
+      "run": 13,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "23b56d066424778682ad828234d260013d4eca8f43cfbeea57dd4bb7be93a868",
+      "arm": "C0",
+      "seed": 10013
+    },
+    {
+      "run": 15,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "3b485d80c7fa22aeb51a8601b83ecdb9de954b58fb7814edb6140caa5648470d",
+      "arm": "C3",
+      "seed": 10015
+    },
+    {
+      "run": 15,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "3b485d80c7fa22aeb51a8601b83ecdb9de954b58fb7814edb6140caa5648470d",
+      "arm": "C1",
+      "seed": 10015
+    },
+    {
+      "run": 15,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "3b485d80c7fa22aeb51a8601b83ecdb9de954b58fb7814edb6140caa5648470d",
+      "arm": "C2",
+      "seed": 10015
+    },
+    {
+      "run": 15,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "3b485d80c7fa22aeb51a8601b83ecdb9de954b58fb7814edb6140caa5648470d",
+      "arm": "C0",
+      "seed": 10015
+    },
+    {
+      "run": 17,
+      "task": "intervals",
+      "baseline_passed": 1,
+      "checkpoint_sha256": "94491a7ff6b3aee60f6728306e6df265a9f90ae3bbe4e36dd560850ff36540c6",
+      "arm": "C3",
+      "seed": 10017
+    },
+    {
+      "run": 17,
+      "task": "intervals",
+      "baseline_passed": 1,
+      "checkpoint_sha256": "94491a7ff6b3aee60f6728306e6df265a9f90ae3bbe4e36dd560850ff36540c6",
+      "arm": "C1",
+      "seed": 10017
+    },
+    {
+      "run": 17,
+      "task": "intervals",
+      "baseline_passed": 1,
+      "checkpoint_sha256": "94491a7ff6b3aee60f6728306e6df265a9f90ae3bbe4e36dd560850ff36540c6",
+      "arm": "C2",
+      "seed": 10017
+    },
+    {
+      "run": 17,
+      "task": "intervals",
+      "baseline_passed": 1,
+      "checkpoint_sha256": "94491a7ff6b3aee60f6728306e6df265a9f90ae3bbe4e36dd560850ff36540c6",
+      "arm": "C0",
+      "seed": 10017
+    },
+    {
+      "run": 18,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "c6050c208a68b77c526c4bbdfa8f76b4b9669874d673e3c37cd5b314d4957984",
+      "arm": "C0",
+      "seed": 10018
+    },
+    {
+      "run": 18,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "c6050c208a68b77c526c4bbdfa8f76b4b9669874d673e3c37cd5b314d4957984",
+      "arm": "C3",
+      "seed": 10018
+    },
+    {
+      "run": 18,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "c6050c208a68b77c526c4bbdfa8f76b4b9669874d673e3c37cd5b314d4957984",
+      "arm": "C2",
+      "seed": 10018
+    },
+    {
+      "run": 18,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "c6050c208a68b77c526c4bbdfa8f76b4b9669874d673e3c37cd5b314d4957984",
+      "arm": "C1",
+      "seed": 10018
+    },
+    {
+      "run": 19,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "51a891d17531cc3c760910392c59bf8bed2570bf7b9d0200417eb0509dec9fce",
+      "arm": "C3",
+      "seed": 10019
+    },
+    {
+      "run": 19,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "51a891d17531cc3c760910392c59bf8bed2570bf7b9d0200417eb0509dec9fce",
+      "arm": "C0",
+      "seed": 10019
+    },
+    {
+      "run": 19,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "51a891d17531cc3c760910392c59bf8bed2570bf7b9d0200417eb0509dec9fce",
+      "arm": "C2",
+      "seed": 10019
+    },
+    {
+      "run": 19,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "51a891d17531cc3c760910392c59bf8bed2570bf7b9d0200417eb0509dec9fce",
+      "arm": "C1",
+      "seed": 10019
+    },
+    {
+      "run": 22,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "23b56d066424778682ad828234d260013d4eca8f43cfbeea57dd4bb7be93a868",
+      "arm": "C1",
+      "seed": 10022
+    },
+    {
+      "run": 22,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "23b56d066424778682ad828234d260013d4eca8f43cfbeea57dd4bb7be93a868",
+      "arm": "C0",
+      "seed": 10022
+    },
+    {
+      "run": 22,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "23b56d066424778682ad828234d260013d4eca8f43cfbeea57dd4bb7be93a868",
+      "arm": "C2",
+      "seed": 10022
+    },
+    {
+      "run": 22,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "23b56d066424778682ad828234d260013d4eca8f43cfbeea57dd4bb7be93a868",
+      "arm": "C3",
+      "seed": 10022
+    },
+    {
+      "run": 26,
+      "task": "intervals",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "1497d43b48b58cceb79063939c43b82ed57815393f9e3f10b5bfe37e3520edeb",
+      "arm": "C1",
+      "seed": 10026
+    },
+    {
+      "run": 26,
+      "task": "intervals",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "1497d43b48b58cceb79063939c43b82ed57815393f9e3f10b5bfe37e3520edeb",
+      "arm": "C0",
+      "seed": 10026
+    },
+    {
+      "run": 26,
+      "task": "intervals",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "1497d43b48b58cceb79063939c43b82ed57815393f9e3f10b5bfe37e3520edeb",
+      "arm": "C2",
+      "seed": 10026
+    },
+    {
+      "run": 26,
+      "task": "intervals",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "1497d43b48b58cceb79063939c43b82ed57815393f9e3f10b5bfe37e3520edeb",
+      "arm": "C3",
+      "seed": 10026
+    },
+    {
+      "run": 28,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "e5fad2f7cc4326ffe1d08fe6fe8700a0d62e6527f7cc1a5273e426761ea0b300",
+      "arm": "C2",
+      "seed": 10028
+    },
+    {
+      "run": 28,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "e5fad2f7cc4326ffe1d08fe6fe8700a0d62e6527f7cc1a5273e426761ea0b300",
+      "arm": "C3",
+      "seed": 10028
+    },
+    {
+      "run": 28,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "e5fad2f7cc4326ffe1d08fe6fe8700a0d62e6527f7cc1a5273e426761ea0b300",
+      "arm": "C1",
+      "seed": 10028
+    },
+    {
+      "run": 28,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "e5fad2f7cc4326ffe1d08fe6fe8700a0d62e6527f7cc1a5273e426761ea0b300",
+      "arm": "C0",
+      "seed": 10028
+    },
+    {
+      "run": 31,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "8b7a84c1f2674ae4a38cee2cc887753953b302db86da48ffc83c44b01abb1a4c",
+      "arm": "C1",
+      "seed": 10031
+    },
+    {
+      "run": 31,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "8b7a84c1f2674ae4a38cee2cc887753953b302db86da48ffc83c44b01abb1a4c",
+      "arm": "C2",
+      "seed": 10031
+    },
+    {
+      "run": 31,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "8b7a84c1f2674ae4a38cee2cc887753953b302db86da48ffc83c44b01abb1a4c",
+      "arm": "C3",
+      "seed": 10031
+    },
+    {
+      "run": 31,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "8b7a84c1f2674ae4a38cee2cc887753953b302db86da48ffc83c44b01abb1a4c",
+      "arm": "C0",
+      "seed": 10031
+    },
+    {
+      "run": 37,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "7c89aeb902bcc1e9db8444ce28259a94734c1f5c02fbf9d61ee2ca357d5a210d",
+      "arm": "C0",
+      "seed": 10037
+    },
+    {
+      "run": 37,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "7c89aeb902bcc1e9db8444ce28259a94734c1f5c02fbf9d61ee2ca357d5a210d",
+      "arm": "C3",
+      "seed": 10037
+    },
+    {
+      "run": 37,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "7c89aeb902bcc1e9db8444ce28259a94734c1f5c02fbf9d61ee2ca357d5a210d",
+      "arm": "C1",
+      "seed": 10037
+    },
+    {
+      "run": 37,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "7c89aeb902bcc1e9db8444ce28259a94734c1f5c02fbf9d61ee2ca357d5a210d",
+      "arm": "C2",
+      "seed": 10037
+    },
+    {
+      "run": 38,
+      "task": "intervals",
+      "baseline_passed": 1,
+      "checkpoint_sha256": "85a6ac6f216dd2d3650e2ad6dcdc8c713382127c42a16acf06b2e6750233ce1e",
+      "arm": "C2",
+      "seed": 10038
+    },
+    {
+      "run": 38,
+      "task": "intervals",
+      "baseline_passed": 1,
+      "checkpoint_sha256": "85a6ac6f216dd2d3650e2ad6dcdc8c713382127c42a16acf06b2e6750233ce1e",
+      "arm": "C3",
+      "seed": 10038
+    },
+    {
+      "run": 38,
+      "task": "intervals",
+      "baseline_passed": 1,
+      "checkpoint_sha256": "85a6ac6f216dd2d3650e2ad6dcdc8c713382127c42a16acf06b2e6750233ce1e",
+      "arm": "C1",
+      "seed": 10038
+    },
+    {
+      "run": 38,
+      "task": "intervals",
+      "baseline_passed": 1,
+      "checkpoint_sha256": "85a6ac6f216dd2d3650e2ad6dcdc8c713382127c42a16acf06b2e6750233ce1e",
+      "arm": "C0",
+      "seed": 10038
+    },
+    {
+      "run": 40,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "6f5ea2f8bb943f1bfd8e28b81ccf940be142c682adffb1a86b102bf25aa229e4",
+      "arm": "C2",
+      "seed": 10040
+    },
+    {
+      "run": 40,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "6f5ea2f8bb943f1bfd8e28b81ccf940be142c682adffb1a86b102bf25aa229e4",
+      "arm": "C0",
+      "seed": 10040
+    },
+    {
+      "run": 40,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "6f5ea2f8bb943f1bfd8e28b81ccf940be142c682adffb1a86b102bf25aa229e4",
+      "arm": "C1",
+      "seed": 10040
+    },
+    {
+      "run": 40,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "6f5ea2f8bb943f1bfd8e28b81ccf940be142c682adffb1a86b102bf25aa229e4",
+      "arm": "C3",
+      "seed": 10040
+    },
+    {
+      "run": 45,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "d24b4f2ee570d9cb05f17701c10deed8a4a6c0e004eda60c5405da9ca4ab0925",
+      "arm": "C0",
+      "seed": 10045
+    },
+    {
+      "run": 45,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "d24b4f2ee570d9cb05f17701c10deed8a4a6c0e004eda60c5405da9ca4ab0925",
+      "arm": "C2",
+      "seed": 10045
+    },
+    {
+      "run": 45,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "d24b4f2ee570d9cb05f17701c10deed8a4a6c0e004eda60c5405da9ca4ab0925",
+      "arm": "C3",
+      "seed": 10045
+    },
+    {
+      "run": 45,
+      "task": "inventory",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "d24b4f2ee570d9cb05f17701c10deed8a4a6c0e004eda60c5405da9ca4ab0925",
+      "arm": "C1",
+      "seed": 10045
+    },
+    {
+      "run": 49,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "a492ef7b77f9f3cae6b581cb13743b49c61d35dfae07c28bedb0be6ce992fd0c",
+      "arm": "C2",
+      "seed": 10049
+    },
+    {
+      "run": 49,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "a492ef7b77f9f3cae6b581cb13743b49c61d35dfae07c28bedb0be6ce992fd0c",
+      "arm": "C0",
+      "seed": 10049
+    },
+    {
+      "run": 49,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "a492ef7b77f9f3cae6b581cb13743b49c61d35dfae07c28bedb0be6ce992fd0c",
+      "arm": "C3",
+      "seed": 10049
+    },
+    {
+      "run": 49,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "a492ef7b77f9f3cae6b581cb13743b49c61d35dfae07c28bedb0be6ce992fd0c",
+      "arm": "C1",
+      "seed": 10049
+    },
+    {
+      "run": 52,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "26a4d163bfa1fa55f9183e859f93753bbf3e98180599bef443f6c9d6e90095dd",
+      "arm": "C0",
+      "seed": 10052
+    },
+    {
+      "run": 52,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "26a4d163bfa1fa55f9183e859f93753bbf3e98180599bef443f6c9d6e90095dd",
+      "arm": "C1",
+      "seed": 10052
+    },
+    {
+      "run": 52,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "26a4d163bfa1fa55f9183e859f93753bbf3e98180599bef443f6c9d6e90095dd",
+      "arm": "C3",
+      "seed": 10052
+    },
+    {
+      "run": 52,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "26a4d163bfa1fa55f9183e859f93753bbf3e98180599bef443f6c9d6e90095dd",
+      "arm": "C2",
+      "seed": 10052
+    },
+    {
+      "run": 58,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "edc9aab29fd5ef8988beffa42d922663c83af54c60dcb5ea45a7aa339dcc36e6",
+      "arm": "C1",
+      "seed": 10058
+    },
+    {
+      "run": 58,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "edc9aab29fd5ef8988beffa42d922663c83af54c60dcb5ea45a7aa339dcc36e6",
+      "arm": "C3",
+      "seed": 10058
+    },
+    {
+      "run": 58,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "edc9aab29fd5ef8988beffa42d922663c83af54c60dcb5ea45a7aa339dcc36e6",
+      "arm": "C0",
+      "seed": 10058
+    },
+    {
+      "run": 58,
+      "task": "settings",
+      "baseline_passed": 0,
+      "checkpoint_sha256": "edc9aab29fd5ef8988beffa42d922663c83af54c60dcb5ea45a7aa339dcc36e6",
+      "arm": "C2",
+      "seed": 10058
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "kind": "balanced_replay",
+  "cases": 80,
+  "groups": {
+    "C0": {
+      "cases": 20,
+      "invoked_tests": 2,
+      "statuses": {
+        "budget_exhausted": 2,
+        "finished": 18
+      },
+      "initially_correct": 2,
+      "finally_correct": 2,
+      "incorrect_to_correct": 0,
+      "mean_distinct_source_states": 1.1
+    },
+    "C1": {
+      "cases": 20,
+      "invoked_tests": 20,
+      "statuses": {
+        "finished": 4,
+        "budget_exhausted": 16
+      },
+      "initially_correct": 2,
+      "finally_correct": 3,
+      "incorrect_to_correct": 1,
+      "mean_distinct_source_states": 1.7
+    },
+    "C2": {
+      "cases": 20,
+      "invoked_tests": 20,
+      "statuses": {
+        "budget_exhausted": 18,
+        "finished": 2
+      },
+      "initially_correct": 2,
+      "finally_correct": 2,
+      "incorrect_to_correct": 0,
+      "mean_distinct_source_states": 1.5
+    },
+    "C3": {
+      "cases": 20,
+      "invoked_tests": 20,
+      "statuses": {
+        "budget_exhausted": 16,
+        "finished": 4
+      },
+      "initially_correct": 2,
+      "finally_correct": 4,
+      "incorrect_to_correct": 2,
+      "mean_distinct_source_states": 1.6
+    }
+  },
+  "paired_counts": {
+    "C1_vs_C0": {
+      "invoked_only_with_guidance": 18,
+      "invoked_only_with_C0": 0
+    },
+    "C2_vs_C0": {
+      "invoked_only_with_guidance": 18,
+      "invoked_only_with_C0": 0
+    },
+    "C3_vs_C0": {
+      "invoked_only_with_guidance": 18,
+      "invoked_only_with_C0": 0
+    }
+  },
+  "checks": "passed"
+}

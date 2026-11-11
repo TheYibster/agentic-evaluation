@@ -1,0 +1,6 @@
+{
+  "checks.py": "def available(stock, sku, quantity):\n    return sku in stock and stock[sku] >= quantity\n",
+  "solution.py": "from checks import available\ndef reserve(stock, requests):\n    counts = {}\n    for sku, quantity in requests:\n        if quantity <= 0: raise ValueError('nonpositive quantity')\n        counts[sku] = counts.get(sku, 0) + quantity\n    for sku, quantity in counts.items():\n        if not available(stock, sku, quantity): raise ValueError('unavailable')\n        stock[sku] -= quantity\n    return stock\n",
+  "README.txt": "solution.py exports reserve; checks.py provides shared availability checks.\n",
+  "tests.py": "import sys\nsys.path.insert(0, '/work')\nfrom solution import reserve\ns={'a':5,'b':2}\nassert reserve(s,[('a',2),('a',1)])=={'a':2,'b':2}\nassert s=={'a':5,'b':2}\nfor req in [[('a',3),('a',3)],[('x',1)],[('a',0)],[('a',-1)]]:\n    try: reserve(s,req)\n    except ValueError: pass\n    else: raise AssertionError('expected rejection')\nassert s=={'a':5,'b':2}\nassert reserve(s,[])==s\n"
+}

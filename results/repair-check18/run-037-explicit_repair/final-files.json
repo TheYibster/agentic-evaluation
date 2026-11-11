@@ -1,0 +1,6 @@
+{
+  "copying.py": "from copy import deepcopy\ndef clone(value):\n    return deepcopy(value)\n",
+  "solution.py": "from copying import clone\ndef merge(defaults, overrides):\n    result = clone(defaults)\n    for key, override in overrides.items():\n        if isinstance(override, dict) and key in result and isinstance(result[key], dict):\n            result[key] = merge(result[key], override)\n        elif override is not None:\n            result[key] = override\n    return result\n",
+  "README.txt": "solution.py exports merge. copying.py provides an independent clone helper.\n",
+  "tests.py": "import sys\nsys.path.insert(0, '/work')\nfrom solution import merge\na={'db':{'host':'local','ports':[1]},'flag':True}\nb={'db':{'host':None,'user':'u'},'flag':False,'absent':None}\nr=merge(a,b)\nassert r=={'db':{'host':'local','ports':[1],'user':'u'},'flag':False}\nr['db']['ports'].append(2)\nassert a['db']['ports']==[1]\nb={'items':[3]}\nr=merge({},b);r['items'].append(4)\nassert b=={'items':[3]}\nassert merge({'x':1},{'x':{'a':2}})=={'x':{'a':2}}\n"
+}

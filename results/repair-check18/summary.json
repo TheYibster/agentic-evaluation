@@ -1,0 +1,20 @@
+{
+  "kind": "repair_check",
+  "cases": 18,
+  "groups": {
+    "explicit_repair": {
+      "cases": 18,
+      "invoked_tests": 17,
+      "statuses": {
+        "budget_exhausted": 15,
+        "finished": 3
+      },
+      "initially_correct": 0,
+      "finally_correct": 1,
+      "incorrect_to_correct": 1,
+      "mean_distinct_source_states": 2.0555555555555554
+    }
+  },
+  "paired_counts": {},
+  "checks": "passed"
+}

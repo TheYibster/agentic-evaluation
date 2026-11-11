@@ -1,0 +1,14 @@
+[
+  {
+    "role": "system",
+    "content": "Repair the repository for the user's request. Respond with one JSON action per turn, without markdown.\nAvailable actions:\n{\"action\":\"list_files\"}\n{\"action\":\"read_file\",\"path\":\"filename\"}\n{\"action\":\"search\",\"query\":\"literal text\"}\n{\"action\":\"write_file\",\"path\":\"filename\",\"content\":\"complete source\"}\n{\"action\":\"run_tests\"}\n{\"action\":\"finish\"}\nThe public API is in solution.py. Use list_files to discover repository filenames. Only existing .py source files other than tests.py can be edited. Do not invent actions."
+  },
+  {
+    "role": "user",
+    "content": "Make a minimal repair to reserve(stock, requests) in solution.py. requests contains (SKU, positive integer quantity) pairs. Aggregate duplicates before checking availability. Reject nonpositive quantities with ValueError and unknown or insufficient stock with ValueError. On success return a new stock dict after deductions. Never mutate either input. Submit using finish when ready."
+  },
+  {
+    "role": "user",
+    "content": "The current repository contains an attempted repair that may still be incorrect. Explicitly invoke run_tests, inspect the failures, and repair the implementation. Rerun tests after your changes. Preserve the task requirements and immutable tests. Use finish when ready."
+  }
+]

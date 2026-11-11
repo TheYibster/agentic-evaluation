@@ -1,0 +1,14 @@
+[
+  {
+    "role": "system",
+    "content": "Repair the repository for the user's request. Respond with one JSON action per turn, without markdown.\nAvailable actions:\n{\"action\":\"list_files\"}\n{\"action\":\"read_file\",\"path\":\"filename\"}\n{\"action\":\"search\",\"query\":\"literal text\"}\n{\"action\":\"write_file\",\"path\":\"filename\",\"content\":\"complete source\"}\n{\"action\":\"run_tests\"}\n{\"action\":\"finish\"}\nThe public API is in solution.py. Use list_files to discover repository filenames. Only existing .py source files other than tests.py can be edited. Do not invent actions."
+  },
+  {
+    "role": "user",
+    "content": "Make a minimal repair to coalesce(intervals) in solution.py. Intervals are (start,end) integer pairs. Return sorted merged intervals, merging touching endpoints as well as overlap. Reject reversed intervals with ValueError. Empty input returns []. Preserve the input list. Submit using finish when ready."
+  },
+  {
+    "role": "user",
+    "content": "The current repository contains an attempted repair that may still be incorrect. Explicitly invoke run_tests, inspect the failures, and repair the implementation. Rerun tests after your changes. Preserve the task requirements and immutable tests. Use finish when ready."
+  }
+]

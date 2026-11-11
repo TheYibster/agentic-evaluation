@@ -1,0 +1,6 @@
+{
+  "ordering.py": "def ordered(intervals):\n    return sorted(intervals)\n",
+  "solution.py": "from ordering import ordered\ndef coalesce(intervals):\n    if not all(start <= end for start, end in intervals):\n        raise ValueError('Intervals must be in non-decreasing order of start and non-increasing order of end')\n    items=ordered(intervals)\n    result=[]\n    for start,end in items:\n        if result and start <= result[-1][1]: result[-1]=(result[-1][0],end)\n        else: result.append((start,end))\n    return result\n",
+  "README.txt": "solution.py exports coalesce. ordering.py supplies ordering.\n",
+  "tests.py": "import sys\nsys.path.insert(0, '/work')\nfrom solution import coalesce\ndata=[(5,7),(1,4),(2,3),(4,5)]\nassert coalesce(data)==[(1,7)]\nassert data==[(5,7),(1,4),(2,3),(4,5)]\nassert coalesce([])==[]\nassert coalesce([(1,2),(4,5)])==[(1,2),(4,5)]\nassert coalesce([(1,1)])==[(1,1)]\ntry: coalesce([(2,1)])\nexcept ValueError: pass\nelse: raise AssertionError('expected rejection')\n"
+}
