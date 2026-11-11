@@ -33,7 +33,7 @@ def main():
     plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 11,
                          'text.color': ink, 'axes.labelcolor': muted,
                          'xtick.color': muted, 'ytick.color': ink,
-                         'svg.fonttype': 'none'})
+                         'svg.fonttype': 'none', 'svg.hashsalt': 'agentic-evaluation'})
     fig = plt.figure(figsize=(12, 9), facecolor='#ffffff')
     grid = fig.add_gridspec(2, 2, height_ratios=[0.8, 2.2],
                            left=0.18, right=0.94, bottom=0.23, top=0.83,
@@ -102,7 +102,9 @@ def main():
              fontsize=10, color=muted)
     out=ROOT/'assets'; out.mkdir(exist_ok=True)
     fig.savefig(out/'results-overview.png', dpi=180, facecolor='white')
-    fig.savefig(out/'results-overview.svg', facecolor='white')
+    svg = out/'results-overview.svg'
+    fig.savefig(svg, facecolor='white', metadata={'Date': None})
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
     plt.close(fig)
     print('Saved assets/results-overview.png and .svg')
 
